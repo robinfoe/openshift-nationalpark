@@ -16,8 +16,8 @@
 #	https://github.com/openshift/source-to-image/blob/master/docs/builder_image.md
 #
 
-cd /opt/openshift && \
+cd /deployments && \
 exec java \
     -Djava.security.egd=file:/dev/./urandom \
-    -jar /opt/openshift/app.jar \
+    -jar /deployments/nationalparks.jar \
     $APP_OPTIONS
